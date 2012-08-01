@@ -83,6 +83,11 @@
     else if ((raining && !allCaptured) || animalsCaught == 0) {
         NSLog(@"We are some lazy slackers... guess unicorns and dinsoaurs are screwed.");
     }
+    
+    NSLog(@"Ok, let's feed these thing...");
+    for (int feed = animalsCaught; feed > 0; feed--) {
+        NSLog(@"Feeding this one, %d animals to go", feed);
+    }
     NSLog(@"Aaaaannnnnddd.... cue the flood!");
     
     return YES; //cause that's how we roll
