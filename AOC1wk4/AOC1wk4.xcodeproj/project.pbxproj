@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C40FAE1E15E7040E00996DE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40FAE1D15E7040E00996DE5 /* UIKit.framework */; };
+		C40FAE2015E7040E00996DE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40FAE1F15E7040E00996DE5 /* Foundation.framework */; };
+		C40FAE2215E7040E00996DE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40FAE2115E7040E00996DE5 /* CoreGraphics.framework */; };
+		C40FAE2815E7040F00996DE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C40FAE2615E7040F00996DE5 /* InfoPlist.strings */; };
+		C40FAE2A15E7040F00996DE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C40FAE2915E7040F00996DE5 /* main.m */; };
+		C40FAE2E15E7040F00996DE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C40FAE2D15E7040F00996DE5 /* AppDelegate.m */; };
+		C40FAE3115E7040F00996DE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C40FAE3015E7040F00996DE5 /* ViewController.m */; };
+		C40FAE3415E7040F00996DE5 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40FAE3215E7040F00996DE5 /* ViewController_iPhone.xib */; };
+		C40FAE3715E7040F00996DE5 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40FAE3515E7040F00996DE5 /* ViewController_iPad.xib */; };
+		C40FAE3F15E7041000996DE5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40FAE3E15E7041000996DE5 /* SenTestingKit.framework */; };
+		C40FAE4015E7041000996DE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40FAE1D15E7040E00996DE5 /* UIKit.framework */; };
+		C40FAE4115E7041000996DE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40FAE1F15E7040E00996DE5 /* Foundation.framework */; };
+		C40FAE4915E7041000996DE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C40FAE4715E7041000996DE5 /* InfoPlist.strings */; };
+		C40FAE4C15E7041000996DE5 /* textFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C40FAE4B15E7041000996DE5 /* textFieldTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C40FAE4215E7041000996DE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C40FAE1015E7040E00996DE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C40FAE1815E7040E00996DE5;
+			remoteInfo = textField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C40FAE1915E7040E00996DE5 /* AOC1wk4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOC1wk4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40FAE1D15E7040E00996DE5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C40FAE1F15E7040E00996DE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C40FAE2115E7040E00996DE5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C40FAE2515E7040F00996DE5 /* AOC1wk4-Info.plist */ = {isa = PBXFileReference; path = "AOC1wk4-Info.plist"; sourceTree = "<group>"; };
+		C40FAE2715E7040F00996DE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C40FAE2915E7040F00996DE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C40FAE2B15E7040F00996DE5 /* AOC1wk4-Prefix.pch */ = {isa = PBXFileReference; path = "AOC1wk4-Prefix.pch"; sourceTree = "<group>"; };
+		C40FAE2C15E7040F00996DE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C40FAE2D15E7040F00996DE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C40FAE2F15E7040F00996DE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C40FAE3015E7040F00996DE5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C40FAE3315E7040F00996DE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		C40FAE3615E7040F00996DE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		C40FAE3D15E7041000996DE5 /* AOC1wk4Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOC1wk4Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40FAE3E15E7041000996DE5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C40FAE4615E7041000996DE5 /* AOC1wk4Tests-Info.plist */ = {isa = PBXFileReference; path = "AOC1wk4Tests-Info.plist"; sourceTree = "<group>"; };
+		C40FAE4815E7041000996DE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C40FAE4A15E7041000996DE5 /* textFieldTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = textFieldTests.h; sourceTree = "<group>"; };
+		C40FAE4B15E7041000996DE5 /* textFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = textFieldTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C40FAE1615E7040E00996DE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40FAE1E15E7040E00996DE5 /* UIKit.framework in Frameworks */,
+				C40FAE2015E7040E00996DE5 /* Foundation.framework in Frameworks */,
+				C40FAE2215E7040E00996DE5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C40FAE3915E7041000996DE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40FAE3F15E7041000996DE5 /* SenTestingKit.framework in Frameworks */,
+				C40FAE4015E7041000996DE5 /* UIKit.framework in Frameworks */,
+				C40FAE4115E7041000996DE5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C40FAE0E15E7040E00996DE5 = {
+			isa = PBXGroup;
+			children = (
+				C40FAE2315E7040E00996DE5 /* textField */,
+				C40FAE4415E7041000996DE5 /* textFieldTests */,
+				C40FAE1C15E7040E00996DE5 /* Frameworks */,
+				C40FAE1A15E7040E00996DE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C40FAE1A15E7040E00996DE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C40FAE1915E7040E00996DE5 /* AOC1wk4.app */,
+				C40FAE3D15E7041000996DE5 /* AOC1wk4Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C40FAE1C15E7040E00996DE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C40FAE1D15E7040E00996DE5 /* UIKit.framework */,
+				C40FAE1F15E7040E00996DE5 /* Foundation.framework */,
+				C40FAE2115E7040E00996DE5 /* CoreGraphics.framework */,
+				C40FAE3E15E7041000996DE5 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C40FAE2315E7040E00996DE5 /* textField */ = {
+			isa = PBXGroup;
+			children = (
+				C40FAE2C15E7040F00996DE5 /* AppDelegate.h */,
+				C40FAE2D15E7040F00996DE5 /* AppDelegate.m */,
+				C40FAE2F15E7040F00996DE5 /* ViewController.h */,
+				C40FAE3015E7040F00996DE5 /* ViewController.m */,
+				C40FAE3215E7040F00996DE5 /* ViewController_iPhone.xib */,
+				C40FAE3515E7040F00996DE5 /* ViewController_iPad.xib */,
+				C40FAE2415E7040F00996DE5 /* Supporting Files */,
+			);
+			path = textField;
+			sourceTree = "<group>";
+		};
+		C40FAE2415E7040F00996DE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C40FAE2515E7040F00996DE5 /* AOC1wk4-Info.plist */,
+				C40FAE2615E7040F00996DE5 /* InfoPlist.strings */,
+				C40FAE2915E7040F00996DE5 /* main.m */,
+				C40FAE2B15E7040F00996DE5 /* AOC1wk4-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C40FAE4415E7041000996DE5 /* textFieldTests */ = {
+			isa = PBXGroup;
+			children = (
+				C40FAE4A15E7041000996DE5 /* textFieldTests.h */,
+				C40FAE4B15E7041000996DE5 /* textFieldTests.m */,
+				C40FAE4515E7041000996DE5 /* Supporting Files */,
+			);
+			path = textFieldTests;
+			sourceTree = "<group>";
+		};
+		C40FAE4515E7041000996DE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C40FAE4615E7041000996DE5 /* AOC1wk4Tests-Info.plist */,
+				C40FAE4715E7041000996DE5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C40FAE1815E7040E00996DE5 /* AOC1wk4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C40FAE4F15E7041000996DE5 /* Build configuration list for PBXNativeTarget "AOC1wk4" */;
+			buildPhases = (
+				C40FAE1515E7040E00996DE5 /* Sources */,
+				C40FAE1615E7040E00996DE5 /* Frameworks */,
+				C40FAE1715E7040E00996DE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AOC1wk4;
+			productName = textField;
+			productReference = C40FAE1915E7040E00996DE5 /* AOC1wk4.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C40FAE3C15E7041000996DE5 /* AOC1wk4Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C40FAE5215E7041000996DE5 /* Build configuration list for PBXNativeTarget "AOC1wk4Tests" */;
+			buildPhases = (
+				C40FAE3815E7041000996DE5 /* Sources */,
+				C40FAE3915E7041000996DE5 /* Frameworks */,
+				C40FAE3A15E7041000996DE5 /* Resources */,
+				C40FAE3B15E7041000996DE5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C40FAE4315E7041000996DE5 /* PBXTargetDependency */,
+			);
+			name = AOC1wk4Tests;
+			productName = textFieldTests;
+			productReference = C40FAE3D15E7041000996DE5 /* AOC1wk4Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C40FAE1015E7040E00996DE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C40FAE1315E7040E00996DE5 /* Build configuration list for PBXProject "AOC1wk4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C40FAE0E15E7040E00996DE5;
+			productRefGroup = C40FAE1A15E7040E00996DE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C40FAE1815E7040E00996DE5 /* AOC1wk4 */,
+				C40FAE3C15E7041000996DE5 /* AOC1wk4Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C40FAE1715E7040E00996DE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40FAE2815E7040F00996DE5 /* InfoPlist.strings in Resources */,
+				C40FAE3415E7040F00996DE5 /* ViewController_iPhone.xib in Resources */,
+				C40FAE3715E7040F00996DE5 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C40FAE3A15E7041000996DE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40FAE4915E7041000996DE5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C40FAE3B15E7041000996DE5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C40FAE1515E7040E00996DE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40FAE2A15E7040F00996DE5 /* main.m in Sources */,
+				C40FAE2E15E7040F00996DE5 /* AppDelegate.m in Sources */,
+				C40FAE3115E7040F00996DE5 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C40FAE3815E7041000996DE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40FAE4C15E7041000996DE5 /* textFieldTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C40FAE4315E7041000996DE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C40FAE1815E7040E00996DE5 /* AOC1wk4 */;
+			targetProxy = C40FAE4215E7041000996DE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C40FAE2615E7040F00996DE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C40FAE2715E7040F00996DE5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C40FAE3215E7040F00996DE5 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C40FAE3315E7040F00996DE5 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		C40FAE3515E7040F00996DE5 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C40FAE3615E7040F00996DE5 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		C40FAE4715E7041000996DE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C40FAE4815E7041000996DE5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C40FAE4D15E7041000996DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C40FAE4E15E7041000996DE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C40FAE5015E7041000996DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "textField/AOC1wk4-Prefix.pch";
+				INFOPLIST_FILE = "textField/AOC1wk4-Info.plist";
+				PRODUCT_NAME = AOC1wk4;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C40FAE5115E7041000996DE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "textField/AOC1wk4-Prefix.pch";
+				INFOPLIST_FILE = "textField/AOC1wk4-Info.plist";
+				PRODUCT_NAME = AOC1wk4;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C40FAE5315E7041000996DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/textField.app/textField";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "textField/textField-Prefix.pch";
+				INFOPLIST_FILE = "textFieldTests/AOC1wk4Tests-Info.plist";
+				PRODUCT_NAME = AOC1wk4Tests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C40FAE5415E7041000996DE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/textField.app/textField";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "textField/textField-Prefix.pch";
+				INFOPLIST_FILE = "textFieldTests/AOC1wk4Tests-Info.plist";
+				PRODUCT_NAME = AOC1wk4Tests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C40FAE1315E7040E00996DE5 /* Build configuration list for PBXProject "AOC1wk4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C40FAE4D15E7041000996DE5 /* Debug */,
+				C40FAE4E15E7041000996DE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C40FAE4F15E7041000996DE5 /* Build configuration list for PBXNativeTarget "AOC1wk4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C40FAE5015E7041000996DE5 /* Debug */,
+				C40FAE5115E7041000996DE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C40FAE5215E7041000996DE5 /* Build configuration list for PBXNativeTarget "AOC1wk4Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C40FAE5315E7041000996DE5 /* Debug */,
+				C40FAE5415E7041000996DE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C40FAE1015E7040E00996DE5 /* Project object */;
+}
