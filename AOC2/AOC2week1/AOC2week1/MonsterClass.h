@@ -23,6 +23,7 @@
 -(id)initWithDetails: (int)notoriousLevel name: (NSString*)name;
 -(void)setName: (NSString*)newName;
 -(NSString*)getName;
+-(NSString*)chanceOfAttack: (int)population;
 
 //calculation method, one argument, one data member -> This must differ in subclasses
 
