@@ -13,6 +13,7 @@
     IBOutlet UILabel* infoScreen;
     IBOutlet UISwitch* powerButton;
     long double originalNumber, currentNumber;
+    IBOutlet UISegmentedControl *colorControl;
     int operatorSelected;
     NSString* stringNumber;
     BOOL isDecimal, wasDecimal, resultIsDisplayed;
