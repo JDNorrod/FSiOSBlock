@@ -1,6 +1,6 @@
 //
 //  main.m
-//  wk3TaskKeeper
+//  TaskApp_wk3
 //
 //  Created by Jonathan on 9/10/12.
 //  Copyright (c) 2012 JDNorrod. All rights reserved.
