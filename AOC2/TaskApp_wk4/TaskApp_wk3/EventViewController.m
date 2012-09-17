@@ -30,9 +30,21 @@
 
 -(void)onSwipe:(UIGestureRecognizer*)swipe
 {
-    eventString = eventDescription.text;
-    [myDelegate viewDidClose:[self appendStringWithDate]];        //send the string via delegate to viewController
-    [self dismissModalViewControllerAnimated: YES];               //return to main view
+    NSCharacterSet* spaces = [NSCharacterSet whitespaceAndNewlineCharacterSet];     //create a set with space and return
+    NSString* trimmedEvent = [eventDescription.text stringByTrimmingCharactersInSet:spaces];       //eliminate whitespace from string
+    
+    if (trimmedEvent.length > 0) {                                                  //if string is empty it means no valid characters
+        eventString = eventDescription.text;
+        [myDelegate viewDidClose:[self appendStringWithDate]];        //send the string via delegate to viewController
+        [self dismissModalViewControllerAnimated: YES];               //return to main view
+    }
+    else{
+        //show alert to prompt description
+        UIAlertView* errorAlert = [[UIAlertView alloc] initWithTitle:@"Error!"
+                                                            message:@"Please enter a description" delegate:nil
+                                                  cancelButtonTitle:@"Okay" otherButtonTitles: nil];
+        [errorAlert show];
+    }
 }
 
 -(IBAction)onClick:(id)sender
