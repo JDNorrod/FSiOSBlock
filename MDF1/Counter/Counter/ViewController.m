@@ -27,9 +27,12 @@
     [tableViewEvents reloadData];
     
     countObjects = [[NSMutableDictionary alloc] init];
-    descriptionArray = [[NSMutableArray alloc] init];
-    descriptionArray = (NSMutableArray*)[countObjects allKeys];
-
+    for (int i = 0; i < 20; i++) {
+        [countObjects setObject:[NSString stringWithFormat:@"%d", i] forKey:[NSString stringWithFormat:@"%d", i]];
+    }
+    
+    descriptionArray = [[NSMutableArray alloc] initWithArray:[countObjects allKeys]];
+    [tableViewEvents reloadData];
 }
 
 - (void)viewDidUnload
@@ -49,13 +52,20 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"%@", [descriptionArray objectAtIndex:indexPath.row]);
+    
+    //set up counter view
+    CounterViewController* detailedView = [[CounterViewController alloc]
+                                           initWithNibName:@"counterView" bundle:nil];
+    
     NSString* numberString =                                                    //use string to set to integer
     [countObjects objectForKey:[descriptionArray objectAtIndex:indexPath.row]]; //set count from selected cell
-    addCountView.counter = [numberString intValue];
-    addCountView.descriptionText = [descriptionArray                            //set description from selected cell
+    detailedView.counter = [numberString intValue];
+    detailedView.descriptionText = [descriptionArray                            //set description from selected cell
                                     objectAtIndex:indexPath.row];
+    detailedView.overwriteOnReturn = YES;
     
-    [self presentModalViewController:addCountView animated:TRUE];               //launch new view
+    [self presentModalViewController:detailedView animated:TRUE];               //launch new view
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

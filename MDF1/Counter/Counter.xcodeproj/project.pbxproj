@@ -20,6 +20,10 @@
 		C43C84CD1613DC7900D92DA4 /* CustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43C84CC1613DC7900D92DA4 /* CustomCellView.xib */; };
 		C43C84D01613DF5100D92DA4 /* tally.png in Resources */ = {isa = PBXBuildFile; fileRef = C43C84CF1613DF5100D92DA4 /* tally.png */; };
 		C4FA1E731615345F0014C948 /* CustomCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FA1E721615345F0014C948 /* CustomCellController.m */; };
+		C4FA1EA4161550A90014C948 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FA1E9F16154EFD0014C948 /* Default.png */; };
+		C4FA1EA61615518D0014C948 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FA1EA51615518D0014C948 /* Default@2x.png */; };
+		C4FA1EB2161553D20014C948 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FA1EB1161553D20014C948 /* Icon.png */; };
+		C4FA1EB4161553D60014C948 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FA1EB3161553D60014C948 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,10 @@
 		C43C84CF1613DF5100D92DA4 /* tally.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tally.png; sourceTree = "<group>"; };
 		C4FA1E711615345F0014C948 /* CustomCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellController.h; sourceTree = "<group>"; };
 		C4FA1E721615345F0014C948 /* CustomCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellController.m; sourceTree = "<group>"; };
+		C4FA1E9F16154EFD0014C948 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C4FA1EA51615518D0014C948 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C4FA1EB1161553D20014C948 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		C4FA1EB3161553D60014C948 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,10 @@
 		C43C83EA1605414500D92DA4 = {
 			isa = PBXGroup;
 			children = (
+				C4FA1EB3161553D60014C948 /* Icon@2x.png */,
+				C4FA1EB1161553D20014C948 /* Icon.png */,
+				C4FA1EA51615518D0014C948 /* Default@2x.png */,
+				C4FA1E9F16154EFD0014C948 /* Default.png */,
 				C43C83FF1605414500D92DA4 /* Counter */,
 				C43C83F81605414500D92DA4 /* Frameworks */,
 				C43C83F61605414500D92DA4 /* Products */,
@@ -173,6 +185,10 @@
 				C43C84171605492400D92DA4 /* counterView.xib in Resources */,
 				C43C84CD1613DC7900D92DA4 /* CustomCellView.xib in Resources */,
 				C43C84D01613DF5100D92DA4 /* tally.png in Resources */,
+				C4FA1EA4161550A90014C948 /* Default.png in Resources */,
+				C4FA1EA61615518D0014C948 /* Default@2x.png in Resources */,
+				C4FA1EB2161553D20014C948 /* Icon.png in Resources */,
+				C4FA1EB4161553D60014C948 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,12 +282,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Counter/Counter-Prefix.pch";
 				INFOPLIST_FILE = "Counter/Counter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -280,12 +294,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Counter/Counter-Prefix.pch";
 				INFOPLIST_FILE = "Counter/Counter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

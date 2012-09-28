@@ -17,6 +17,7 @@
 @synthesize countDelegate;
 @synthesize counter;
 @synthesize overwriteOnReturn;
+@synthesize descriptionText;
 
 -(IBAction)dismissKeyboard{
     
