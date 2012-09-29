@@ -29,10 +29,12 @@
     countObjects = [[NSMutableDictionary alloc] init];
     for (int i = 0; i < 20; i++) {
         [countObjects setObject:[NSString stringWithFormat:@"%d", i] forKey:[NSString stringWithFormat:@"%d", i]];
+        totalCount += i;
     }
     
-    descriptionArray = [[NSMutableArray alloc] initWithArray:[countObjects allKeys]];
-    [tableViewEvents reloadData];
+    totalCountLabel.text = [NSString stringWithFormat:@"Total Count = %d", totalCount];     //display new count
+    descriptionArray = [[NSMutableArray alloc] initWithArray:[countObjects allKeys]];       //update array
+    [tableViewEvents reloadData];                                                           //reload table
 }
 
 - (void)viewDidUnload
@@ -57,6 +59,7 @@
     //set up counter view
     CounterViewController* detailedView = [[CounterViewController alloc]
                                            initWithNibName:@"counterView" bundle:nil];
+    detailedView.countDelegate = self;
     
     NSString* numberString =                                                    //use string to set to integer
     [countObjects objectForKey:[descriptionArray objectAtIndex:indexPath.row]]; //set count from selected cell
@@ -104,9 +107,11 @@
 
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //delete from dictionary and tableView
-    [countObjects removeObjectForKey:[descriptionArray objectAtIndex:indexPath.row]];               //remove from dictionary first using array
+    NSString* removeKey = [countObjects objectForKey:[descriptionArray objectAtIndex:indexPath.row]];
+    totalCount -= [removeKey intValue];                                                             //subtract deleted amount from total
     
+    //delete from dictionary and tableView
+    [countObjects removeObjectForKey:removeKey];                                                    //remove from dictionary first using array
     [tableViewEvents deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]                     //remove from tableView
                            withRowAnimation:TRUE];
 }
@@ -114,9 +119,12 @@
 #pragma mark -
 #pragma mark Delegates
 
--(void)eventDidSave:(NSString*)description withCount: (int) myNum shouldOverwrite:(BOOL)response
+//delegate from detail view / add count view
+-(void)eventDidSave:(NSString *)description withCount:(int)myNum shouldOverwrite:(BOOL)response
 {
+    NSLog(@"eventdidSave");
     [countObjects setObject:[NSString stringWithFormat:@"%d", myNum] forKey:description];   //add the event to the dictionary and array
+    
     descriptionArray = (NSMutableArray*)[countObjects allKeys];
     
     totalCount += myNum;                                                                    //update new count
